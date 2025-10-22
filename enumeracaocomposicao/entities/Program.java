@@ -25,7 +25,7 @@ public class Program {
         
 		System.out.println("Enter order data:");
 		System.out.print("Status: ");
-		OrderStatus status = OrderStatus.valueOf(sc.next());
+		OrderStatus status = OrderStatus.valueOf(kb.next());
 		
 		Order order = new Order(new Date(), status, client);
 		
@@ -55,6 +55,4 @@ public class Program {
 		
 		kb.close();
 	}
-}
-    }
 }
